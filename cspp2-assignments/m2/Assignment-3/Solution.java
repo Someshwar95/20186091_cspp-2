@@ -6,7 +6,7 @@ public class Solution {
 	*/
 	static int power(int e, int b)
 	{
-		if(e ==0 ){
+		if(e == 0 ){
 			return 1;
 		}
 		else {
