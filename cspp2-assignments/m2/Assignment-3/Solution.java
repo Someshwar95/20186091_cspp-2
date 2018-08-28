@@ -19,7 +19,7 @@ public final class Solution {
      * @return     { description_of_the_return_value }.
      */
     static long power(final int b, final int e) {
-        if(e == 0 ) {
+        if (e == 0) {
             return 1;
         } else {
             return (b * power(b, e - 1));
