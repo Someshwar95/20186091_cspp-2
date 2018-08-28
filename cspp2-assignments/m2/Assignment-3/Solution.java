@@ -4,7 +4,7 @@ public class Solution {
 	/*
 	Do not modify this main function.
 	*/
-	static long power(int b, int e)
+	static long power(final int b, final int e)
 	{
 		if(e == 0 ) {
 			return 1;
