@@ -4,9 +4,9 @@ public class Solution {
 	/*
 	Do not modify this main function.
 	*/
-	static long power(int e, int b)
+	static long power(int b, int e)
 	{
-		if(e == 0 ){
+		if(e == 0 ) {
 			return 1;
 		}
 		else {
