@@ -4,6 +4,9 @@ import java.util.Scanner;
  * Class for solution.
  */
 public class Solution {
+	private Solution() {
+
+	}
 	/*
 	Do not modify this main function.
 	*/
@@ -13,7 +16,7 @@ public class Solution {
 			return 1;
 		}
 		else {
-			return (b * power(b, e - 1)); 
+			return (b * power(b, e - 1));
 		}
 	}
 	/**
@@ -21,7 +24,7 @@ public class Solution {
 	 *
 	 * @param      args  The arguments.
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
         int base = s.nextInt();
         int exponent = s.nextInt();
