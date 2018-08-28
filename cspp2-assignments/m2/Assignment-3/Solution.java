@@ -3,13 +3,21 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 
 	}
-	/*
-	Do not modify this main function.
-	*/
+	/**
+	 * { function_description }
+	 *
+	 * @param      b     { parameter_description }.
+	 * @param      e     { parameter_description }.
+	 *
+	 * @return     { description_of_the_return_value }.
+	 */
 	static long power(final int b, final int e)
 	{
 		if(e == 0 ) {
