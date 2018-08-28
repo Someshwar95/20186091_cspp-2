@@ -4,7 +4,7 @@ public class Solution {
 	/*
 	Do not modify this main function.
 	*/
-	static int power(int e, int b)
+	static long power(int e, int b)
 	{
 		if(e == 0 ){
 			return 1;
@@ -17,7 +17,7 @@ public class Solution {
 		Scanner s=new Scanner(System.in);      
         int base = s.nextInt();
         int exponent = s.nextInt();
-        int result=power(base,exponent);
+        long result=power(base,exponent);
         System.out.println(result);
 	}
 	/*
