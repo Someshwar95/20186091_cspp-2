@@ -7,6 +7,12 @@ import java.util.Scanner;
  * Class for solution.
  */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
     /**.
      * { function_description }
      *
@@ -15,7 +21,7 @@ public class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    static int gcd(final int n1, final int n2)
+    public static int gcd(final int n1, final int n2)
     {
         int max = 0;
         if (n1 > n2) {
