@@ -4,13 +4,13 @@ import java.util.Scanner;
 	Do not modify this main function.
 	*/
 public class Solution {
-    static int gcd(int n1, int n2)
+    static int gcd(final int n1, final int n2)
     {
         //int n1, n2;
         int max = 0;
-        if(n1 > n2){
+        if (n1 > n2) {
             max = n1;
-        }else {
+        } else {
             max = n2;
         }
         int gcd_val = 1;
