@@ -17,7 +17,6 @@ public class Solution {
      */
     static int gcd(final int n1, final int n2)
     {
-        //int n1, n2;
         int max = 0;
         if (n1 > n2) {
             max = n1;
