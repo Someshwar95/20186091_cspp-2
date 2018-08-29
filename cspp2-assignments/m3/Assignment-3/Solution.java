@@ -3,8 +3,11 @@ import java.util.Scanner;
 /*
 	Do not modify this main function.
 	*/
+/**
+ * Class for solution.
+ */
 public class Solution {
-    /**
+    /**.
      * { function_description }
      *
      * @param      n1    The n 1
@@ -44,7 +47,7 @@ public class Solution {
         return gcd_val;
     }
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
