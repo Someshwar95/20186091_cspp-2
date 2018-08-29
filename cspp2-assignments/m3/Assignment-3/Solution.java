@@ -1,8 +1,8 @@
 
 import java.util.Scanner;
 /*
-	Do not modify this main function.
-	*/
+    Do not modify this main function.
+    */
 /**
  * Class for solution.
  */
@@ -61,6 +61,6 @@ public class Solution {
         System.out.println(i);
     }
     /*
-	Need to write the gcd function and print the output.
-	*/
+    Need to write the gcd function and print the output.
+    */
 }
