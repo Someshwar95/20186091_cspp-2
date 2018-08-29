@@ -10,12 +10,12 @@ public class Solution {
         int max = 0;
         if(n1 > n2){
             max = n1;
-        }else{
+        }else {
             max = n2;
         }
         int gcd_val = 1;
-        for(int i=1; i <= max; i++){
-            if(n1 % i == 0 && n2 % i == 0){
+        for (int i = 1; i <= max; i++) {
+            if (n1 % i == 0 && n2 % i == 0) {
                 gcd_val = i;
             }
         }
@@ -25,7 +25,7 @@ public class Solution {
         //         return i;
 
         // }
-            
+
 
 
         // for(int i=1;i<=n2;i++) {
@@ -36,7 +36,7 @@ public class Solution {
         return gcd_val;
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
