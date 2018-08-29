@@ -4,6 +4,14 @@ import java.util.Scanner;
 	Do not modify this main function.
 	*/
 public class Solution {
+    /**
+     * { function_description }
+     *
+     * @param      n1    The n 1
+     * @param      n2    The n 2
+     *
+     * @return     { description_of_the_return_value }
+     */
     static int gcd(final int n1, final int n2)
     {
         //int n1, n2;
@@ -36,6 +44,11 @@ public class Solution {
         return gcd_val;
     }
 
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
 
         Scanner s = new Scanner(System.in);
