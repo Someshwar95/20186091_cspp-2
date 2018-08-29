@@ -13,7 +13,7 @@ public class Solution {
         }else{
             max = n2;
         }
-        int gcd_val = 0;
+        int gcd_val = 1;
         for(int i=1; i <= max; i++){
             if(n1 % i == 0 && n2 % i == 0){
                 gcd_val = i;
@@ -33,7 +33,7 @@ public class Solution {
         //         return i;
 
         // }
-        return 1;
+        return gcd_val;
     }
 
     public static void main(String[] args) {
