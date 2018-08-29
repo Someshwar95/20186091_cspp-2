@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -21,18 +21,17 @@ public class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static int gcd(final int n1, final int n2)
-    {
+    public static int gcd(final int n1, final int n2) {
         int max = 0;
         if (n1 > n2) {
             max = n1;
         } else {
             max = n2;
         }
-        int gcd_val = 1;
+        int gcdval = 1;
         for (int i = 1; i <= max; i++) {
             if (n1 % i == 0 && n2 % i == 0) {
-                gcd_val = i;
+                gcdval = i;
             }
         }
 
@@ -49,7 +48,7 @@ public class Solution {
         //         return i;
 
         // }
-        return gcd_val;
+        return gcdval;
     }
 
     /**.
@@ -69,3 +68,10 @@ public class Solution {
     Need to write the gcd function and print the output.
     */
 }
+
+
+
+
+
+
+
