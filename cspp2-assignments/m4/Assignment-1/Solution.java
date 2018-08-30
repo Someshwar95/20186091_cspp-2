@@ -4,9 +4,13 @@ import java.util.Scanner;
  * Class for solution.
  */
 public class Solution
-{/*
-    Fill this main function to print maximum of given array
-    */
+{
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
 
     /**.
      * { function_description }
