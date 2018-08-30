@@ -5,7 +5,7 @@ public class Solution
     Fill this main function to print maximum of given array
     */
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
