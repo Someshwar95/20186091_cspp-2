@@ -15,7 +15,12 @@ public class Solution
         }
         return str;
     }
-    public static void main(String[] args) {
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         String reverse = reverseString(s);
