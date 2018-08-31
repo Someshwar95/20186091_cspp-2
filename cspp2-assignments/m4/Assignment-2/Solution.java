@@ -19,23 +19,26 @@ public class Solution {
         sc.nextLine();
         int[][] b = new int[m1][n1];
         int[][] c = new int[3][3];
-
-        for (int k = 0; k < m1; k++) {
-            for (int l = 0; l < n1; l++) {
-                b[k][l] = sc.nextInt();
-            }
+        if(m1!=3 && n1!=3) {
+            System.out.println("not possible");
         }
-        for (int i = 0;i < m;i++ ) {
-            for (int j = 0;j < n;j++ ) {
-                c[i][j] = a[i][j] + b[i][j];
-                System.out.print(c[i][j]);
-                if(j < n - 1){
-                    System.out.print(" ");
+        else {
+            for (int k = 0; k < m1; k++) {
+                for (int l = 0; l < n1; l++) {
+                    b[k][l] = sc.nextInt();
                 }
             }
-            System.out.println();
-            
+            for (int i = 0;i < m;i++ ) {
+                for (int j = 0;j < n;j++ ) {
+                    c[i][j] = a[i][j] + b[i][j];
+                    System.out.print(c[i][j]);
+                    if(j < n - 1){
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+                
         }
-
+    }
     }
 }
