@@ -35,7 +35,7 @@ public class Solution {
                 }
                 System.out.println();
             }   
-        } if(m1!=3 && n1!=3) {
+        } else if(m==m1 && n==n1) {
             System.out.println("not possible");
         }
     }
