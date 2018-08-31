@@ -6,9 +6,14 @@ import java.util.Scanner;
 /**.
  * Class for solution.
  */
-public class Solution {/*
-    Do not modify the main function
-    */
+public class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    
     /**.
      * { function_description }
      *
