@@ -31,9 +31,7 @@ public class Solution {
                 System.out.print(c[i][j]);
                 if(j < n - 1){
                     System.out.print(" ");
-                }else
-                System.out.println("not possible");
-                
+                }
             }
             System.out.println();
             
