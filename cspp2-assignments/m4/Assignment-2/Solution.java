@@ -20,9 +20,9 @@ public class Solution {
         int[][] b = new int[m1][n1];
         int[][] c = new int[3][3];
         if(m1!=3 && n1!=3) {
-            System.out.println("not possible");
-        }
-        else {
+            
+        
+        
             for (int k = 0; k < m1; k++) {
                 for (int l = 0; l < n1; l++) {
                     b[k][l] = sc.nextInt();
@@ -37,8 +37,10 @@ public class Solution {
                     }
                 }
                 System.out.println();
-                
+            }   
+        } else {
+            System.out.println("not possible");
         }
     }
-    }
+    
 }
