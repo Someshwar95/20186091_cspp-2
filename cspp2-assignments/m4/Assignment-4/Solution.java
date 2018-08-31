@@ -7,7 +7,14 @@ public class Solution
 {/*
     Do not modify the main function 
     */
-    static String reverseString(String s) {
+    /**
+     * { function_description }
+     *
+     * @param      s     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    static String reverseString(final String s) {
         String str = "";
         for (int i = s.length() - 1; i >= 0; i--) {
             char reverse = s.charAt(i);
@@ -15,7 +22,7 @@ public class Solution
         }
         return str;
     }
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
