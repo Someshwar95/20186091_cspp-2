@@ -18,13 +18,14 @@ public class Solution {
 			for (int j = 0; j < n ; j++ ) {
 				a[i][j] = sc.nextInt();
 			}
-			sc.nextLine();
+			// sc.nextLine();
 		}
 
 		for (int k = 0; k < m1; k++) {
 			for (int l = 0; l < n1; l++) {
 				b[k][l] = sc.nextInt();
 			}
+			// sc.nextLine();	
 		}
 		for (int i = 0;i < m;i++ ) {
 			for (int j = 0;j < n;j++ ) {
