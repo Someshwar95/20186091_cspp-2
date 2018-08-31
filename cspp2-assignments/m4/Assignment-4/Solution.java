@@ -5,9 +5,9 @@
 import java.util.Scanner;
 public class Solution
 {/*
-    Do not modify the main function 
+    Do not modify the main function
     */
-    /**
+    /**.
      * { function_description }
      *
      * @param      s     { parameter_description }
