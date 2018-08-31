@@ -7,16 +7,15 @@ public class Solution
 {/*
     Do not modify the main function 
     */
-    static String reverseString(String s){
+    static String reverseString(String s) {
         String str = "";
-        for(int i=s.length()-1;i>=0;i--) {
+        for (int i = s.length()-1;i>=0;i--) {
             char reverse = s.charAt(i);
             str = str + reverse;
         }
         return str;
     }
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         String reverse = reverseString(s);
