@@ -3,8 +3,7 @@
 
 
 import java.util.Scanner;
-public class Solution
-{/*
+public class Solution {/*
     Do not modify the main function
     */
     /**.
