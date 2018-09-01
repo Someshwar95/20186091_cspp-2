@@ -24,7 +24,12 @@ public final class Solution {
 
             System.out.println(i);
 
+        } else if(i % i !=0) {
+            System.out.println(i);
         }
+
+            
+        
 
     }
     }
