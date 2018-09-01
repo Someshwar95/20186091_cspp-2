@@ -18,20 +18,21 @@ public final class Solution {
      * @param      n     n value
      */
     static void oddComposites(final int n) {
-	// write your code here
-    	for (int i=0;i<n ;i++ ) {
-    	if (i%2 !=0) {
-    		System.out.println(i);
-    		
-    	}
-    	
+    // write your code here
+        for (int i=0;i<n ;i++ ) {
+        if (i%2 !=0) {
+
+            System.out.println(i);
+
+        }
+
     }
     }
     /**
     * main method as driver program.
     * @param args is the parameter for this method
     */
-    
+
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
