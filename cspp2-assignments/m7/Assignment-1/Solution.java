@@ -7,6 +7,9 @@ class InputValidator {
      * { var_description }
      */
     public static final int num = 6;
+    /**.
+     * { var_description }
+     */
     private String str;
     /**.
      * Constructs the object.
@@ -36,7 +39,7 @@ class InputValidator {
 public class Solution {
     /**
      * . { item_description }
-     * 
+     *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
