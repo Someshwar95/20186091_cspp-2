@@ -36,7 +36,7 @@ class InputValidator {
 /**.
  * Class for solution.
  */
-public class Solution {
+class Solution {
     /**
      * . { item_description }
      *
