@@ -6,7 +6,7 @@ class InputValidator {
     /**.
      * { var_description }
      */
-    String str;
+    private String str;
     /**.
      * Constructs the object.
      *
