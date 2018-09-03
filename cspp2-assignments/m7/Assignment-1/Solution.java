@@ -6,7 +6,7 @@ class InputValidator {
     /**.
      * { var_description }
      */
-    public static final int Num = 6;
+    public static final int NUM = 6;
     /**.
      * { var_description }
      */
@@ -26,7 +26,7 @@ class InputValidator {
      * @return     { description_of_the_return_value }
      */
     public boolean validateData() {
-        if (str.length() >= Num) {
+        if (str.length() >= NUM) {
             return true;
         } else {
             return false;
@@ -36,7 +36,7 @@ class InputValidator {
 /**
  * . Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**.
      * Constructs the object.
      */
