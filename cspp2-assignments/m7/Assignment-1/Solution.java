@@ -26,12 +26,7 @@ class InputValidator {
      * @return     { description_of_the_return_value }
      */
     public boolean validateData() {
-        if (str.length() >= NUM) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+        return (str.length() >= NUM);
     }
 /**
  * . Class for solution.
@@ -50,14 +45,14 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(final String[] args) {
+    public  void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         String input = s.next();
         InputValidator i = new InputValidator(input);
         System.out.println(i.validateData());
 
     }
-
+}
 }
 
 
