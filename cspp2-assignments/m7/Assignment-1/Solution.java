@@ -2,8 +2,7 @@ import java.util.Scanner;
 /**.
  * Class for input validator.
  */
-class InputValidator
-{
+class InputValidator {
     String str;
     /**.
      * Constructs the object.
@@ -14,7 +13,6 @@ class InputValidator
     this.str = s;
     }
 
-    
     /**.
      * { function_description }
      *
