@@ -16,7 +16,7 @@ class InputValidator {
      *
      * @param      s     { parameter_description }
      */
-    public InputValidator(final String s) {
+    InputValidator(final String s) {
     this.str = s;
     }
 
