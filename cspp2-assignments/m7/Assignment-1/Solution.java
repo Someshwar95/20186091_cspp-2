@@ -8,7 +8,7 @@ class InputValidator
 
     /*Write the atrributes and methods for InputValidator*/
     public boolean validateData() {
-        if(str.length()>=6) {
+        if(str.length() >= 6) {
             return true;
         } else{
             return false;
