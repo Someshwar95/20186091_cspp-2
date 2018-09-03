@@ -2,11 +2,16 @@ import java.util.*;
 class InputValidator
 {
     String str; 
-    public InputValidator(String s) {
+    public InputValidator(final String s) {
     this.str = s;
     }
 
-    /*Write the atrributes and methods for InputValidator*/
+    
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean validateData() {
         if (str.length() >= 6) {
             return true;
@@ -15,11 +20,11 @@ class InputValidator
         }
     }
     }
-/**
+/**.
  * Class for solution.
  */
 public class Solution {
-    /**
+    /**.
      * { item_description }
      */
     public static void main(final String args[]) {
