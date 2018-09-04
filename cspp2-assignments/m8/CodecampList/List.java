@@ -154,7 +154,7 @@ public class List {
      * How do we check if the position is greater than the 
      * number of items in the list? Would size variable be useful?
      */
-    public int get(int index) {
+    public int get(final int index) {
         // Replace the code below to write the code for get
             if (index < size) {
                 return a[index];
@@ -172,7 +172,7 @@ public class List {
      * System.out.println(l);
      * This statement is a shortcut for
      * System.out.println(l.toString());
-     * 
+     *
      * So, implement the toString method to display the items
      * in the list in the square brackets notation.
      * i.e., if the list has numbers 1, 2, 3
@@ -182,6 +182,11 @@ public class List {
      * toString should only return the items in the list and
      * not all the elements of the array.
      *
+     */
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
      */
     public String toString() {
         // Replace the code below
