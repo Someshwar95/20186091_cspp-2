@@ -65,6 +65,9 @@ public class List {
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
+    /**.
+     * Constructs the object.
+     */
     public List() {
 
         // what are the two variables to be initialized here?
@@ -80,7 +83,7 @@ public class List {
         a = new int[10];
         size = 0;
     }
-    
+
     /*
      * The add method does what the name suggests.
      * Add an int item to the list.
