@@ -92,16 +92,21 @@ public class List {
      * 
      * The method returns void (nothing)
      */
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     */
     public void add(int item) {
        a[size] = item;
-        size+=1;
+        size += 1;
     }
 
     /*
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
      * to the objects outside the list
-     * 
+     *
      * The method returns an int. Empty list should return 0.
      */
     public int size() {
@@ -113,7 +118,7 @@ public class List {
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
      * It also does an additional step.
-     * Think about what happens when 
+     * Think about what happens when
      * an item is removed from the middle of the list
      * It creates a hole in the list, right?
      * This would mean, all the items that are
