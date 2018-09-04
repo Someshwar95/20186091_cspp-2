@@ -203,10 +203,17 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean contains(final int item) {
         // Replace the code below
-        for(int i = 0; i < size; i++) {
-            if(a[i] == item) {
+        for (int i = 0; i < size; i++) {
+            if (a[i] == item) {
                 return true;
             }
 
@@ -226,7 +233,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         // Replace the code below
         for (int i = 0; i < size; i++) {
             if (a[i] == item) {
