@@ -156,7 +156,7 @@ public class List {
      */
     public int get(int index) {
         // Replace the code below to write the code for get
-            if(index<size) {
+            if (index < size) {
                 return a[index];
             } else {
                 return -1;
