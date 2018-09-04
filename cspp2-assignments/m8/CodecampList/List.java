@@ -228,14 +228,18 @@ public class List {
      */
     public int indexOf(int item) {
         // Replace the code below
-        for(int i=0; i<size; i++) {
-            if(a[i]==item) {
+        for(int i = 0; i < size; i++) {
+            if(a[i] == item) {
                 return i;
             }
         }
         return -1;
     }
-
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
