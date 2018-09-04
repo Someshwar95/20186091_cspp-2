@@ -206,16 +206,16 @@ public class List {
     public boolean contains(int item) {
         // Replace the code below
         for(int i = 0; i < size; i++) {
-            if(a[i]==item) {
+            if(a[i] == item) {
                 return true;
-            } 
-            
+            }
+
         }
         return false;
     }
 
     /*
-     * Returns the index of the first occurrence 
+     * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
@@ -228,8 +228,8 @@ public class List {
      */
     public int indexOf(int item) {
         // Replace the code below
-        for(int i = 0; i < size; i++) {
-            if(a[i] == item) {
+        for (int i = 0; i < size; i++) {
+            if (a[i] == item) {
                 return i;
             }
         }
