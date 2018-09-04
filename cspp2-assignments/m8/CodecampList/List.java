@@ -195,15 +195,15 @@ public class List {
         }
         str = str + "]";
         return str;
-    } 
-    
+    }
+
     /*
      * Contains return true if the list has
      * the item passed as an argument to the method
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         // Replace the code below
         for(int i = 0; i < size; i++) {
             if(a[i] == item) {
