@@ -187,9 +187,9 @@ public class List {
         // Replace the code below
         String str = "[";
         String comma = ",";
-        for(int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             str = str + Integer.toString(a[i]);
-            if(i < size - 1) {
+            if (i < size - 1) {
                 str = str + comma;
             }
         }
