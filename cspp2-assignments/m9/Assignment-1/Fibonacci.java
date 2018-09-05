@@ -38,7 +38,7 @@ public class Fibonacci
             a = b;
             b = c;
             c = a + b;
-        l.add(c);
+            l.add(c);
         }
         // todo - complete this method
         return l;
