@@ -21,6 +21,9 @@ import java.util.Scanner;
  * Class for fibonacci.
  */
 public class Fibonacci {
+    /**.
+     * Constructs the object.
+     */
     private Fibonacci() {
 
     }
