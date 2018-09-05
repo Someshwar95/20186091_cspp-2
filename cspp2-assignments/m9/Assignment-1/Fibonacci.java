@@ -37,7 +37,7 @@ public class Fibonacci
         int b = 1;
         l.add(b);
         int c = 0;
-        for(int i=2; i<n; i++) {
+        for(int i = 2; i < n; i++) {
             c = a + b;
             l.add(c);
             a = b;
