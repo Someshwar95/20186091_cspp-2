@@ -31,13 +31,13 @@ public class Fibonacci
      */
     public static List fib(int n) {
         List l = new List(n);
-        
+
         int a = 0;
         l.add(a);
         int b = 1;
         l.add(b);
         int c = 0;
-        for(int i = 2; i < n; i++) {
+        for (int i = 2; i < n; i++) {
             c = a + b;
             l.add(c);
             a = b;
