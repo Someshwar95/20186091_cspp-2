@@ -35,12 +35,12 @@ public class Fibonacci
         l.add(b);
         int c = 1;
         l.add(c);
-        for(int i=1;i<n;i++) {
-            a = b;
-            l.add(a);
-            b = c;
+        for(int i=2;i<n;i++) {
             c = a + b;
-        }
+            l.add(a);
+            a = b;
+            b = c;
+            }
         // todo - complete this method
         return l;
     }
