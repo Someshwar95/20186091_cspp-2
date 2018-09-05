@@ -31,13 +31,12 @@ public class Fibonacci
         
         int a = 0;
         l.add(a);
-        int b = 0;
+        int b = 1;
         l.add(b);
-        int c = 1;
-        l.add(c);
+        int c = 0;
         for(int i=2;i<n;i++) {
             c = a + b;
-            l.add(a);
+            l.add(c);
             a = b;
             b = c;
             }
