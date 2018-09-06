@@ -265,8 +265,7 @@ public class List {
     }
    /*Inserts all the elements of specified int 
     array to the end of list*/
-    public void addAll(int items[])
-    {
+    public void addAll(int items[]) {
     	for(int i=0;i<items.length;i++) {
     		add(items[i]);
     	}
@@ -288,8 +287,7 @@ public class List {
     }
     
     /* Returns the count of occurances of a given item in the list*/
-    public int count(int item)
-    {
+    public int count(int item) {
     	int count = 0;
     	for (int i = 0; i < size; i++) {
     		if (list[i] == item) {
