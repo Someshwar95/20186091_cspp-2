@@ -261,7 +261,14 @@ public class List {
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
-    public int indexOf(int item) {
+    /**.
+     * Searches for the first match.
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int indexOf(final int item) {
         for (int i = 0; i < size; i++) {
             if (item == list[i]) {
                 return i;
@@ -271,7 +278,12 @@ public class List {
     }
    /*Inserts all the elements of specified int
     array to the end of list*/
-    public void addAll(int[] items) {
+    /**.
+     * Adds all.
+     *
+     * @param      items  The items
+     */
+    public void addAll(final int[] items) {
         for (int i = 0; i < items.length; i++) {
             add(items[i]);
         }
