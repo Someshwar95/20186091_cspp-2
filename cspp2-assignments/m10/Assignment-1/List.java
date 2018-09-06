@@ -277,9 +277,9 @@ public class List {
 	by moving all the elements to the right.
         The method returns void (nothing)
      */
-    public void add(int index,int item) {
+    public void add(int index, int item) {
     	for (int i = size; i >= index; i--) {
-    		list[i] = list[i-1];
+    		list[i] = list[i - 1];
          // write the logic
     	}
     	list[index] = item;
