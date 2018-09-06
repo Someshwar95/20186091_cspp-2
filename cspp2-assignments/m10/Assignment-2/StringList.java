@@ -10,7 +10,7 @@ interface StringListInterface
      public boolean contains(String item);
      public int indexOf(String item);
 }
-//Write a StringList class which implements StringListInterface 
+//Write a StringList class which implements StringListInterface
 
 public class StringList implements StringListInterface{
     //Implement all the methods mentioned to build a ListADT
@@ -59,7 +59,7 @@ public class StringList implements StringListInterface{
      * So, to keep track of the size we need a variable called size
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
-     * 
+     *
      */
 
     // declare a private int size
