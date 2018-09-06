@@ -93,7 +93,12 @@ public class List {
      * constructor.
      *
      */
-    public List(int capacity) {
+    /**.
+     * Constructs the object.
+     *
+     * @param      capacity  The capacity
+     */
+    public List(final int capacity) {
         size = 0;
         list = new int[capacity];
     }
@@ -109,7 +114,12 @@ public class List {
      *
      * The method returns void (nothing)
      */
-    public void add(int item) {
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     */
+    public void add(final int item) {
         //Inserts the specified element at the end of the zelist.
         list[size++] = item;
     }
