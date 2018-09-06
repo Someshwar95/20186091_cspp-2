@@ -282,7 +282,7 @@ public class List {
         The method returns void (nothing)
      */
     public void add(int index, int item) {
-        for (int i = size; i > index; i--) {
+        for (int i = size; i >= index; i--) {
             list[i] = list[i - 1];
          // write the logic
         }
