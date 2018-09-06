@@ -115,10 +115,11 @@ public class StringList implements StringListInterface{
      * Is it the same as the end of the array?
      * Think about how you can use the size variable to add item
      * to the list.
-     * 
+     *
      * The method returns void (nothing)
      */
     public void add(String item) {
+
         //Inserts the specified element at the end of the list.
 
     }
@@ -132,7 +133,7 @@ public class StringList implements StringListInterface{
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
      * to the objects outside the list
-     * 
+     *
      * The method returns an int. Empty list should return 0.
      */
     public int size() {
@@ -143,7 +144,7 @@ public class StringList implements StringListInterface{
      * The remove method does what the name suggests.
      * Removes a String item, specified by the index argument, from the list
      * It also does an additional step.
-     * Think about what happens when 
+     * Think about what happens when
      * an item is removed from the middle of the list
      * It creates a hole in the list, right?
      * This would mean, all the items that are
@@ -226,7 +227,7 @@ public class StringList implements StringListInterface{
         return str;
 
     }
-    
+
     /*
      * Contains return true if the list has
      * the item passed as an argument to the method
