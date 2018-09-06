@@ -240,7 +240,7 @@ public class List {
         str = str + list[i] + "]";
         return str;
     }
-    
+
     /*
      * Contains return true if the list has
      * the item passed as an argument to the method
@@ -258,8 +258,9 @@ public class List {
      */
     public int indexOf(int item) {
         for (int i = 0; i < size; i++) {
-            if (item == list[i])
+            if (item == list[i]) {
                 return i;
+            }
         }
         return -1;
     }
