@@ -283,7 +283,13 @@ public class List {
     by moving all the elements to the right.
         The method returns void (nothing)
      */
-    public void add(int index, int item) {
+    /**.
+     * { function_description }
+     *
+     * @param      index  The index
+     * @param      item   The item
+     */
+    public void add(final int index, final int item) {
         for (int i = size; i >= index; i--) {
             list[i] = list[i - 1];
          // write the logic
