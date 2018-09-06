@@ -254,7 +254,7 @@ public class List {
     }
 
     /*
-     * Returns the index of the first occurrence 
+     * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
@@ -269,23 +269,32 @@ public class List {
     array to the end of list*/
     public void addAll(int items[])
     {
-        // write the logic 
+    	for(int i=0;i<items.length;i++) {
+    		add(items[i]);
+    	}
+        // write the logic
     }
 
      /* 
-        Inserts the specified element at the specified index 
+        Inserts the specified element at the specified index
 	by moving all the elements to the right.
         The method returns void (nothing)
      */
     public void add(int index,int item) {
-         // write the logic 
+         // write the logic
     }
     
     /* Returns the count of occurances of a given item in the list*/
     public int count(int item)
     {
-         // write the logic 
-        return 0;
+    	int count = 0;
+    	for (int i=0; i<size; i++) {
+    		if(list[i]==item) {
+    			count++;
+    		}
+         // write the logic
+    	}
+        return count;
     }
 
 
