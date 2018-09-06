@@ -25,7 +25,7 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    
+
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -85,11 +85,11 @@ public class List {
      * There will be some clients of the ADT that will require
      * the list to contain n elements which is known
      * at the time of creating the list.
-     * 
+     *
      * The overloaded constructor is a way to initialize a list with
      * a list capacity of n items where n is given as an argument to
      * constructor.
-     * 
+     *
      */
     public List(int capacity) {
         size = 0;
@@ -109,7 +109,7 @@ public class List {
      */
     public void add(int item) {
         //Inserts the specified element at the end of the zelist.
-        list[size++] = item;   
+        list[size++] = item;
     }
 
     /*
@@ -125,13 +125,14 @@ public class List {
      * Create a new array of the desired size,
      * and copy the contents from the original array to the new array,
      * using java.lang.System.arraycopy(...);
-     * 
+     *
      * Option 2
      * Use java.util.Arrays.copyOf(...) methods which returns a bigger array,
      * with the contents of the original array.
      *
      * TODO
-     * Create a method called resize(). Resize should create an new array that is
+     * Create a method called resize(). Resize should create an
+     * new array that is
      * double the size of the old array.
      * Then copy the contents of the old array to the new one.
      *
