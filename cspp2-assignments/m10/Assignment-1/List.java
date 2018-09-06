@@ -304,7 +304,11 @@ public class List {
         return count;
     }
 
-
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
