@@ -2,7 +2,7 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 
 public class List {
-	//Implement all the methods mentioned to build a ListADT
+    //Implement all the methods mentioned to build a ListADT
 
     /*
      * The goal for the list is to store items.
@@ -266,40 +266,40 @@ public class List {
    /*Inserts all the elements of specified int 
     array to the end of list*/
     public void addAll(int items[]) {
-    	for(int i=0;i<items.length;i++) {
-    		add(items[i]);
-    	}
+        for (int i = 0; i < items.length; i++) {
+            add(items[i]);
+        }
         // write the logic
     }
 
-     /* 
+     /*
         Inserts the specified element at the specified index
-	by moving all the elements to the right.
+    by moving all the elements to the right.
         The method returns void (nothing)
      */
     public void add(int index, int item) {
-    	for (int i = size; i >= index; i--) {
-    		list[i] = list[i - 1];
+        for (int i = size; i >= index; i--) {
+            list[i] = list[i - 1];
          // write the logic
-    	}
-    	list[index] = item;
-    	size++;
+        }
+        list[index] = item;
+        size++;
     }
-    
+
     /* Returns the count of occurances of a given item in the list*/
     public int count(int item) {
-    	int count = 0;
-    	for (int i = 0; i < size; i++) {
-    		if (list[i] == item) {
-    			count++;
-    		}
+        int count = 0;
+        for (int i = 0; i < size; i++) {
+            if (list[i] == item) {
+                count++;
+            }
          // write the logic
-    	}
+        }
         return count;
     }
 
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -365,5 +365,5 @@ public class List {
                 break;
             }
         }
-	}
+    }
 }
