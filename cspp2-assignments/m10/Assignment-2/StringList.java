@@ -119,15 +119,19 @@ public class StringList implements StringListInterface{
      * The method returns void (nothing)
      */
     public void add(String item) {
-        
-
         //Inserts the specified element at the end of the list.
-
+        if (size == list.length - 1) {
+            resize();
+        }
+        list[size++] = item;
     }
     /*Inserts all the elements of specified int
     array to the end of list*/
 
     public void addAll(String[] items) {
+        if (size == list.length - 1) {
+            resize();
+        }
         for (int i = 0; i < items.length; i++) {
             add(items[i]);
         }
@@ -198,7 +202,13 @@ public class StringList implements StringListInterface{
         }
 
     }
+    public void resize() {
+        int resize = 2*size;
+        String[] list1 = new String[resize];
+        System.arraycopy(list,0,list1,0,list.length);
+        list = list1;
 
+    }
     /*
      * What happens when you print an object using println?
      * Java provides a method named toString that is internally
