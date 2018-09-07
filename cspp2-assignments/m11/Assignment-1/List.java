@@ -249,12 +249,12 @@ public class List {
         for (int i = 0; i < size; i++) {
             int temp = list1.get(i);
             if (temp == list[i]) {
-                count ++;
+                count++;
             }
         }
             if (count == size) {
                 return true;
-            } 
+            }
                 return false;
     // Replace the code below
     }
