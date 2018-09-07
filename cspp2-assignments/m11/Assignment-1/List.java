@@ -252,7 +252,7 @@ public class List {
                 count ++;
             }
             if (count == size) {
-                return true;
+                return false;
             } else {
                 return true;
             }
