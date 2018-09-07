@@ -228,7 +228,7 @@ public class List {
     Returns a boolean indicating whether the parameter i.e a List object is
     exactly matching with the given list or not.
     */
-    public boolean equals(List list )
+    public boolean equals(List list)
     {
     // Replace the code below
         return true;
