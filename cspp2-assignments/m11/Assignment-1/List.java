@@ -243,8 +243,30 @@ public class List {
     Returns a boolean indicating whether the parameter i.e a List object is
     exactly matching with the given list or not.
     */
-    public boolean equals(List list)
+    public boolean equals(List list1)
     {
+        int count = 0;
+        for(int i = 0; i < size; i++) {
+            int temp = list1.get(i);
+            if(temp == list[i]) {
+                count ++;
+            }
+            if (count == size) {
+                return true;
+            } else {
+                return false;
+            }
+            
+        }
+
+
+
+
+
+
+
+
+
     // Replace the code below
         return true;
     }
