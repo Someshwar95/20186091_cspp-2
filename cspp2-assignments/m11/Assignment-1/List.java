@@ -231,7 +231,7 @@ public class List {
     public boolean equals(List list ) 
     {
     // Replace the code below
-    	return false;
+    	return true;
     }
     /*
     * Removes all the elements from list
