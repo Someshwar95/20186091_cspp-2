@@ -265,10 +265,10 @@ public class List {
     */
     public void clear()
     {
-        for(int i = 0; i < size; i++) {
-            list[i]=0;
+        for (int i = 0; i < size; i++) {
+            list[i] = 0;
         }
-        size=0;
+        size = 0;
     // write the logic for clear.
 
     }
