@@ -209,6 +209,9 @@ public class List {
     */
      public void removeAll(int[] newArray)
      {
+        for(int i=0; i<newArray.length;i++) {
+            remove(i);
+        }
         // write the logic
 
      }
