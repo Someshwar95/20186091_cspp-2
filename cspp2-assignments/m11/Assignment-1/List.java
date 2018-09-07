@@ -203,7 +203,7 @@ public class List {
         }
     }
     /*
-     Removes all of its elements that are contained in the specified int 
+     Removes all of its elements that are contained in the specified int
      array.    
     */
      public void removeAll(int[] newArray)
@@ -214,7 +214,7 @@ public class List {
     /*
     Returns a list object containing elements, including startIndex and
     excluding endIndex. The first parameter indicates the startIndex and the
-    second parameter indicates the endIndex. Returns null and print 
+    second parameter indicates the endIndex. Returns null and print
     "Index Out of Bounds Exception" if any of values start and end are negative
     and also if start is greater than end.
     */
@@ -243,7 +243,7 @@ public class List {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
