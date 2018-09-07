@@ -252,21 +252,12 @@ public class List {
                 count ++;
             }
             if (count == size) {
-                return false;
-            } else {
                 return true;
+            } else {
+                return false;
             }
             
         }
-
-
-
-
-
-
-
-
-
     // Replace the code below
         return true;
     }
