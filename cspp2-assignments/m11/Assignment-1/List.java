@@ -246,7 +246,7 @@ public class List {
     public boolean equals(List list)
     {
     // Replace the code below
-        return false;
+        return true;
     }
     /*
     * Removes all the elements from list
@@ -255,6 +255,10 @@ public class List {
     */
     public void clear()
     {
+        for(int i = 0; i < size; i++) {
+            list[i]=0;
+        }
+        size=0;
     // write the logic for clear.
 
     }
