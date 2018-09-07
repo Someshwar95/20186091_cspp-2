@@ -209,7 +209,7 @@ public class List {
     */
      public void removeAll(int[] newArray)
      {
-        for(int i=0; i<newArray.length;i++) {
+        for(int i=0; i<newArray.length; i++) {
             remove(i);
         }
         // write the logic
@@ -224,8 +224,20 @@ public class List {
     */
     public List subList(final int start, final int end)
     {
+        List templist =new List();
+        if(start > end) {
+            System.out.println("Index Out Of Bounds Exception");
+            return null;
+        } else if(start < 0 || end < 0) {
+            System.out.println("Index Out Of Bounds Exception");
+            return null;
+        } else {
+            for(int i = start; i<end; i++) {
+                templist.add(list[i]);
+            }
+            return templist;
+        }
     // write the logic for subList
-    return new List();
     }
     /*
     Returns a boolean indicating whether the parameter i.e a List object is
