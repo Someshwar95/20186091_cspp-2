@@ -25,7 +25,7 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    
+
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -48,7 +48,7 @@ public class List {
      * So, to keep track of the size we need a variable called size
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
-     * 
+     *
      */
 
     // declare a private int size
@@ -75,7 +75,7 @@ public class List {
         size = 0;
 
     }
-    
+
     /*
      * The add method does what the name suggests. Add an int item to the list.
      * The assumption is to store the item at the end of the list What is the
@@ -198,10 +198,9 @@ public class List {
     */
     public void addAll(int[] newArray)
     {
-    	for (int i = 0; i < newArray.length; i++) {
+        for (int i = 0; i < newArray.length; i++) {
             add(newArray[i]);
         }
-        // write the logic
     }
     /*
      Removes all of its elements that are contained in the specified int 
@@ -231,7 +230,7 @@ public class List {
     public boolean equals(List list ) 
     {
     // Replace the code below
-    	return true;
+        return true;
     }
     /*
     * Removes all the elements from list
@@ -319,7 +318,7 @@ public class List {
                     String[] arrstring3 = tokens[1].split(",");
                     List object = l.subList(Integer.parseInt(arrstring3[0]),
                             Integer.parseInt(arrstring3[1]));
-                    if (object != null) 
+                    if (object != null)
                         System.out.println(object);
                     break;
                 }
