@@ -225,7 +225,7 @@ public class List {
     public List subList(final int start, final int end)
     {
         List templist = new List();
-        if(start > end) {
+        if (start > end) {
             System.out.println("Index Out of Bounds Exception");
             return null;
         } else if (start < 0 || end < 0) {
