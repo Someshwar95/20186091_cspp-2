@@ -161,16 +161,17 @@ public class List {
      */
     public String toString() {
         // Replace the code below
-        if(size == 0)
+        if (size == 0) {
             return "[]";
+        }
         String str = "[";
         int i = 0;
-        for(i = 0; i < size - 1; i++) {
+        for (i = 0; i < size - 1; i++) {
             str = str + list[i] + ",";
         }
         str = str + list[i] + "]";
         return str;
-    } 
+    }
     /*
      * Contains return true if the list has the item passed as an argument to
      * the method So, iterate through the list and return true if the item
@@ -194,7 +195,7 @@ public class List {
         return -1;
     }
     /*
-    Inserts all the elements of specified int array to the end of list    
+    Inserts all the elements of specified int array to the end of list
     */
     public void addAll(int[] newArray)
     {
@@ -204,11 +205,11 @@ public class List {
     }
     /*
      Removes all of its elements that are contained in the specified int
-     array.    
+     array.
     */
      public void removeAll(int[] newArray)
      {
-        // write the logic 
+        // write the logic
 
      }
     /*
@@ -218,7 +219,7 @@ public class List {
     "Index Out of Bounds Exception" if any of values start and end are negative
     and also if start is greater than end.
     */
-    public List subList(int start, int end) 
+    public List subList(int start, int end)
     {
     // write the logic for subList
     return new List();
@@ -227,7 +228,7 @@ public class List {
     Returns a boolean indicating whether the parameter i.e a List object is
     exactly matching with the given list or not.
     */
-    public boolean equals(List list ) 
+    public boolean equals(List list )
     {
     // Replace the code below
         return true;
