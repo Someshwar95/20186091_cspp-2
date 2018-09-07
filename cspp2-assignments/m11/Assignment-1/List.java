@@ -209,7 +209,7 @@ public class List {
     */
      public void removeAll(int[] newArray)
      {
-        for(int i=0; i<newArray.length; i++) {
+        for (int i = 0; i < newArray.length; i++) {
             remove(i);
         }
         // write the logic
@@ -224,15 +224,15 @@ public class List {
     */
     public List subList(final int start, final int end)
     {
-        List templist =new List();
+        List templist = new List();
         if(start > end) {
             System.out.println("Index Out of Bounds Exception");
             return null;
-        } else if(start < 0 || end < 0) {
+        } else if (start < 0 || end < 0) {
             System.out.println("Index Out of Bounds Exception");
             return null;
         } else {
-            for(int i = start; i<end; i++) {
+            for (int i = start; i < end; i++) {
                 templist.add(list[i]);
             }
             return templist;
@@ -246,9 +246,9 @@ public class List {
     public boolean equals(List list1)
     {
         int count = 0;
-        for(int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             int temp = list1.get(i);
-            if(temp == list[i]) {
+            if (temp == list[i]) {
                 count ++;
             }
         }
