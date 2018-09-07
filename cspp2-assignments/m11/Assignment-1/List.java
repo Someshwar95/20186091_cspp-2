@@ -251,15 +251,12 @@ public class List {
             if(temp == list[i]) {
                 count ++;
             }
+        }
             if (count == size) {
                 return true;
-            } else {
+            } 
                 return false;
-            }
-            
-        }
     // Replace the code below
-        return true;
     }
     /*
     * Removes all the elements from list
