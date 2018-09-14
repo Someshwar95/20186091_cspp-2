@@ -79,34 +79,33 @@ class BookYourShow {
     }
     public void printTicket(String moviename,String date,String pnumber) {
         Show checkshow = getAShow(moviename,date);
-        if(checkshow != null) {
+        if (checkshow != null) {
             int flag = 0;
-            for(int i=0;i<allpatronscount;i++){
-                if(allpatrons[i].pnumber.equals(pnumber)){
+            for (int i = 0; i < allpatronscount;i++){
+                if (allpatrons[i].pnumber.equals(pnumber)){
                     flag = 1;
                     break;
                 }
             }
             if(flag == 1) {
                 System.out.println(pnumber + " " +moviename + " " + date);
-            }else {
+            } else {
                 System.out.println("Invalid");
             } 
-        }else {
+        } else {
             System.out.println("Invalid");
         }
 
     }
     public void showAll() {
-        for (int i=0;i<allshowscount;i++) {
+        for (int i = 0;i < allshowscount; i++) {
             String st = allshows[i].moviename + "," + allshows[i].date + ",";
             String onlyseats = "[";
-            for (int j=0;j<allshows[i].seats.length;j++) {
+            for (int j = 0; j < allshows[i].seats.length; j++) {
                 onlyseats += allshows[i].seats[j];
-                if(j<allshows[i].seats.length-1) {
+                if (j < allshows[i].seats.length - 1) {
                     onlyseats += ",";
                 }
-                
             }
             onlyseats += "]";
             st += onlyseats;
