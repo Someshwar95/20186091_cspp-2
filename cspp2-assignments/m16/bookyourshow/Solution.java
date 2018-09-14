@@ -9,17 +9,17 @@ class Show {
     public String date;
     public String[] seats;
     public Show(String moviename, String dateandtime, String[] seats) {
-        moviename = moviename;
-        date = dateandtime;
-        seats = seats;
+        this.moviename = moviename;
+        this.date = dateandtime;
+        this.seats = seats;
     }
 }
 class Patron {
     public String name;
     public String pnumber;
     public Patron(String name, String pnumber) {
-        name = name;
-        pnumber = pnumber;
+        this.name = name;
+        this.pnumber = pnumber;
     }
 }
 class BookYourShow {
