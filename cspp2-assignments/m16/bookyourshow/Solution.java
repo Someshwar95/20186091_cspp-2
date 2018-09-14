@@ -63,11 +63,11 @@ class BookYourShow {
             if(flag==1) {
                 allpatrons[allpatronscount++]=pa;
             }
+        } else {
+            System.out.println("No show");
         }
 
         }
-        
-
     }
     public Show getAShow(String moviename, String showdate) {
         for (int i=0;i<allshowscount;i++) {
