@@ -133,7 +133,7 @@ public final class Solution {
         for (int i = 0; i < testCases; i++) {
             String[] tokens = scan.nextLine().
                 replace("[", "").replace("]", "").split(",");
-                System.out.println(Arrays.toString(tokens));
+                // System.out.println(Arrays.toString(tokens));
             String[] check = tokens[0].split(" ");
             switch (check[0]) {
                 case "add":
