@@ -76,14 +76,18 @@ class BookYourShow {
     public void printTicket(String moviename,String date,String pnumber) {
         Show checkshow = getAShow(moviename,date);
         if(checkshow != null) {
+            int flag = 0;
             for(int i=0;i<allpatronscount;i++){
                 if(allpatrons[i].pnumber.equals(pnumber)){
                     System.out.println(pnumber + " " +moviename + " " + date);
                     break;
                 }
             }
-        } else {
-            System.out.println("Invalid");
+            if(flag == 1) {
+                System.out.println(pnumber + " " +moviename + " " + date);
+            }else {
+                System.out.println("Invalid");
+            }
         }
 
     }
