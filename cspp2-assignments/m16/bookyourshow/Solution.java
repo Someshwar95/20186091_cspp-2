@@ -8,7 +8,7 @@ class Show {
     public String moviename;
     public String date;
     public String[] seats;
-    public Show(String moviename, String dateandtime, String[] seats) {
+    public Show(final String moviename, final String dateandtime, final String[] seats) {
         this.moviename = moviename;
         this.date = dateandtime;
         this.seats = seats;
@@ -17,7 +17,7 @@ class Show {
 class Patron {
     public String name;
     public String pnumber;
-    public Patron(String name, String pnumber) {
+    public Patron(final String name, final String pnumber) {
         this.name = name;
         this.pnumber = pnumber;
     }
@@ -34,11 +34,11 @@ class BookYourShow {
         allpatronscount = 0;
 
     }
-    public void addAShow(Show show) {
+    public void addAShow(final Show show) {
         allshows[allshowscount++] = show;
 
     }
-    public void bookAShow(String moviename, String date, Patron pa, String[] seats) {
+    public void bookAShow(final String moviename, final String date, final Patron pa, final String[] seats) {
         Show checkshow = getAShow(moviename,date);
         if(allshowscount == 0){
             System.out.println("No show");
