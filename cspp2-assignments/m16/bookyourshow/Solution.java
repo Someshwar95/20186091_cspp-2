@@ -41,7 +41,10 @@ class BookYourShow {
     public void bookAShow(String moviename, String date, 
         Patron pa, String[] seats) {
         Show checkshow = getAShow(moviename,date);
-        if(checkshow != null){
+        if(allshowscount == 0){
+            System.out.println("No show");
+        }else{
+            if(checkshow != null){
             int flag = 0;
             for(int i=0;i<seats.length;i++){
                 for(int j=0;j<checkshow.seats.length;j++) {
@@ -61,6 +64,9 @@ class BookYourShow {
                 allpatrons[allpatronscount++]=pa;
             }
         }
+
+        }
+        
 
     }
     public Show getAShow(String moviename, String showdate) {
