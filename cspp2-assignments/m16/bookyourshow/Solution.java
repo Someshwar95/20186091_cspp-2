@@ -39,27 +39,27 @@ class BookYourShow {
 
     }
     public void bookAShow(final String moviename, final String date, final Patron pa, final String[] seats) {
-        Show checkshow = getAShow(moviename,date);
-        if(allshowscount == 0){
+        Show checkshow = getAShow(moviename, date);
+        if (allshowscount == 0) {
             System.out.println("No show");
-        }else{
-            if(checkshow != null){
+        } else {
+            if (checkshow != null) {
             int flag = 0;
             for (int i = 0; i < seats.length; i++){
                 for (int j = 0; j < checkshow.seats.length; j++) {
-                    if (seats[i].equals(checkshow.seats[j])){
+                    if (seats[i].equals(checkshow.seats[j])) {
                         checkshow.seats[j] = "N/A";
                         flag = 1;
                     }
                 }
             }
-            for (int p = 0; p < allshowscount; p++){
+            for (int p = 0; p < allshowscount; p++) {
                 if (allshows[p].moviename.equals(checkshow.moviename) &&
-                    allshows[p].date.equals(checkshow.date)){
+                    allshows[p].date.equals(checkshow.date)) {
                     allshows[p] = checkshow;
                 }
             }
-            if(flag == 1) {
+            if (flag == 1) {
                 allpatrons[allpatronscount++] = pa;
             }
         } else {
