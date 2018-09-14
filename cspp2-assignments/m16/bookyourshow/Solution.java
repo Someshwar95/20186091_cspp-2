@@ -23,10 +23,25 @@ class Patron {
     }
 }
 class BookYourShow {
+    /**.
+     * { var_description }
+     */
     public Show[] allshows;
+    /**.
+     * { var_description }
+     */
     public int allshowscount;
+    /**.
+     * { var_description }
+     */
     public Patron[] allpatrons;
+    /**.
+     * { var_description }
+     */
     public int allpatronscount;
+    /**.
+     * Constructs the object.
+     */
     public BookYourShow() {
         allshows = new Show[10];
         allshowscount = 0;
@@ -91,6 +106,13 @@ class BookYourShow {
         return null;
 
     }
+    /**.
+     * { function_description }
+     *
+     * @param      moviename  The moviename
+     * @param      date       The date
+     * @param      pnumber    The pnumber
+     */
     public void printTicket(final String moviename, final String date, final String pnumber) {
         Show checkshow = getAShow(moviename, date);
         if (checkshow != null) {
