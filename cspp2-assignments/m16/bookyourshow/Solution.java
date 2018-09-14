@@ -60,7 +60,7 @@ class BookYourShow {
                 }
             }
             if(flag == 1) {
-                allpatrons[allpatronscount++]=pa;
+                allpatrons[allpatronscount++] = pa;
             }
         } else {
             System.out.println("No show");
@@ -78,7 +78,7 @@ class BookYourShow {
         return null;
 
     }
-    public void printTicket(String moviename, String date, String pnumber) {
+    public void printTicket(final String moviename, final String date, final String pnumber) {
         Show checkshow = getAShow(moviename, date);
         if (checkshow != null) {
             int flag = 0;
