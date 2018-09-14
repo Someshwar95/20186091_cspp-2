@@ -34,6 +34,11 @@ class BookYourShow {
         allpatronscount = 0;
 
     }
+    /**.
+     * Adds a show.
+     *
+     * @param      show  The show
+     */
     public void addAShow(final Show show) {
         allshows[allshowscount++] = show;
 
@@ -45,7 +50,7 @@ class BookYourShow {
         } else {
             if (checkshow != null) {
             int flag = 0;
-            for (int i = 0; i < seats.length; i++){
+            for (int i = 0; i < seats.length; i++) {
                 for (int j = 0; j < checkshow.seats.length; j++) {
                     if (seats[i].equals(checkshow.seats[j])) {
                         checkshow.seats[j] = "N/A";
@@ -68,6 +73,14 @@ class BookYourShow {
 
         }
     }
+    /**.
+     * Gets a show.
+     *
+     * @param      moviename  The moviename
+     * @param      showdate   The showdate
+     *
+     * @return     A show.
+     */
     public Show getAShow(final String moviename, final String showdate) {
         for (int i = 0; i < allshowscount; i++) {
             if (allshows[i].moviename.equals(moviename)
@@ -98,8 +111,11 @@ class BookYourShow {
         }
 
     }
+    /**.
+     * Shows all.
+     */
     public void showAll() {
-        for (int i = 0;i < allshowscount; i++) {
+        for (int i = 0; i < allshowscount; i++) {
             String st = allshows[i].moviename + "," + allshows[i].date + ",";
             String onlyseats = "[";
             for (int j = 0; j < allshows[i].seats.length; j++) {
@@ -115,6 +131,9 @@ class BookYourShow {
     }
 }
 
+/**.
+ * { item_description }
+ */
 public final class Solution {
     /**
      * Constructs the object.
