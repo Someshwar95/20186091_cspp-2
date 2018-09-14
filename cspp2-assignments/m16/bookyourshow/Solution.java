@@ -21,7 +21,7 @@ class Patron {
     /**.
      * { var_description }
      */
-    public String name;
+    private String name;
     /**.
      * { var_description }
      */
