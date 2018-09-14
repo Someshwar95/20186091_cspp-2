@@ -84,6 +84,7 @@ class BookYourShow {
             int flag = 0;
             for(int i=0;i<allpatronscount;i++){
                 if(allpatrons[i].pnumber.equals(pnumber)){
+                    flag = 1;
                     break;
                 }
             }
