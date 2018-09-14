@@ -5,9 +5,25 @@ import java.util.Arrays;
  * Class for solution.
  */
 class Show {
+    /**.
+     * { var_description }
+     */
     public String moviename;
+    /**.
+     * { var_description }
+     */
     public String date;
+    /**.
+     * { var_description }
+     */
     public String[] seats;
+    /**.
+     * Constructs the object.
+     *
+     * @param      moviename    The moviename
+     * @param      dateandtime  The dateandtime
+     * @param      seats        The seats
+     */
     public Show(final String moviename, final String dateandtime, final String[] seats) {
         this.moviename = moviename;
         this.date = dateandtime;
