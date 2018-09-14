@@ -68,9 +68,9 @@ class BookYourShow {
 
         }
     }
-    public Show getAShow(String moviename, String showdate) {
+    public Show getAShow(final String moviename, final String showdate) {
         for (int i = 0; i < allshowscount; i++) {
-            if (allshows[i].moviename.equals(moviename) 
+            if (allshows[i].moviename.equals(moviename)
                 && allshows[i].date.equals(showdate)) {
                 return allshows[i];
             }
@@ -79,10 +79,10 @@ class BookYourShow {
 
     }
     public void printTicket(String moviename, String date, String pnumber) {
-        Show checkshow = getAShow(moviename,date);
+        Show checkshow = getAShow(moviename, date);
         if (checkshow != null) {
             int flag = 0;
-            for (int i = 0; i < allpatronscount;i++) {
+            for (int i = 0; i < allpatronscount; i++) {
                 if (allpatrons[i].pnumber.equals(pnumber)) {
                     flag = 1;
                     break;
