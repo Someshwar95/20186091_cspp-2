@@ -71,8 +71,7 @@ class BookYourShow {
     }
     public Show getAShow(String moviename, String showdate) {
         for (int i=0;i<allshowscount;i++) {
-            if(allshows[i].moviename.equals(moviename)&&
-                allshows[i].date.equals(showdate)) {
+            if(allshows[i].moviename.equals(moviename) && allshows[i].date.equals(showdate)) {
                 return allshows[i];
             }
         }
