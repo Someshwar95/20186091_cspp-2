@@ -14,14 +14,32 @@ class Show {
         this.seats = seats;
     }
 }
+/**.
+ * Class for patron.
+ */
 class Patron {
+    /**.
+     * { var_description }
+     */
     public String name;
+    /**.
+     * { var_description }
+     */
     public String pnumber;
+    /**.
+     * Constructs the object.
+     *
+     * @param      name     The name
+     * @param      pnumber  The pnumber
+     */
     public Patron(final String name, final String pnumber) {
         this.name = name;
         this.pnumber = pnumber;
     }
 }
+/**.
+ * Class for book your show.
+ */
 class BookYourShow {
     /**.
      * { var_description }
@@ -66,7 +84,8 @@ class BookYourShow {
      * @param      pa         { parameter_description }
      * @param      seats      The seats
      */
-    public void bookAShow(final String moviename, final String date, final Patron pa, final String[] seats) {
+    public void bookAShow(final String moviename, final String date,
+        final Patron pa, final String[] seats) {
         Show checkshow = getAShow(moviename, date);
         if (allshowscount == 0) {
             System.out.println("No show");
@@ -121,7 +140,7 @@ class BookYourShow {
      * @param      date       The date
      * @param      pnumber    The pnumber
      */
-    public void printTicket(final String moviename, 
+    public void printTicket(final String moviename,
         final String date, final String pnumber) {
         Show checkshow = getAShow(moviename, date);
         if (checkshow != null) {
