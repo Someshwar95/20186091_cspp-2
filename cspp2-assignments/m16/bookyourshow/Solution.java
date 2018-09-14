@@ -63,10 +63,10 @@ class BookYourShow {
         }
 
     }
-    public Show getAShow(String moviename, String date) {
+    public Show getAShow(String moviename, String showdate) {
         for (int i=0;i<allshowscount;i++) {
             if(allshows[i].moviename.equals(moviename)&&
-                allshows[i].date.equals(date)) {
+                allshows[i].date.equals(showdate)) {
                 return allshows[i];
             }
         }
@@ -148,7 +148,7 @@ public final class Solution {
                 case "get":
                     Show show = bys.getAShow(check[1], tokens[1]);
                     if (show != null) {
-                       System.out.println(show);
+                       System.out.println(show.moviename + "," + show.date);
                     } else {
                         System.out.println("No show");
                     }
