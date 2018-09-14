@@ -82,6 +82,8 @@ class BookYourShow {
                     break;
                 }
             }
+        } else {
+            System.out.println("Invalid");
         }
 
     }
