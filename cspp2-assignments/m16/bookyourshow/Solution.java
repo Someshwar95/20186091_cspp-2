@@ -45,16 +45,16 @@ class BookYourShow {
         }else{
             if(checkshow != null){
             int flag = 0;
-            for(int i=0;i<seats.length;i++){
-                for(int j=0;j<checkshow.seats.length;j++) {
-                    if(seats[i].equals(checkshow.seats[j])){
+            for (int i = 0; i < seats.length; i++){
+                for (int j = 0; j < checkshow.seats.length; j++) {
+                    if (seats[i].equals(checkshow.seats[j])){
                         checkshow.seats[j] = "N/A";
                         flag = 1;
                     }
                 }
             }
-            for(int p=0;p<allshowscount;p++){
-                if(allshows[p].moviename.equals(checkshow.moviename)&&
+            for (int p = 0; p < allshowscount; p++){
+                if (allshows[p].moviename.equals(checkshow.moviename) &&
                     allshows[p].date.equals(checkshow.date)){
                     allshows[p] = checkshow;
                 }
@@ -70,7 +70,7 @@ class BookYourShow {
     }
     public Show getAShow(String moviename, String showdate) {
         for (int i=0;i<allshowscount;i++) {
-            if(allshows[i].moviename.equals(moviename) && allshows[i].date.equals(showdate)) {
+            if (allshows[i].moviename.equals(moviename) && allshows[i].date.equals(showdate)) {
                 return allshows[i];
             }
         }
@@ -87,11 +87,11 @@ class BookYourShow {
                     break;
                 }
             }
-            if(flag == 1) {
-                System.out.println(pnumber + " " +moviename + " " + date);
+            if (flag == 1) {
+                System.out.println(pnumber + " " + moviename + " " + date);
             } else {
                 System.out.println("Invalid");
-            } 
+            }
         } else {
             System.out.println("Invalid");
         }
