@@ -58,6 +58,14 @@ class BookYourShow {
         allshows[allshowscount++] = show;
 
     }
+    /**.
+     * { function_description }
+     *
+     * @param      moviename  The moviename
+     * @param      date       The date
+     * @param      pa         { parameter_description }
+     * @param      seats      The seats
+     */
     public void bookAShow(final String moviename, final String date, final Patron pa, final String[] seats) {
         Show checkshow = getAShow(moviename, date);
         if (allshowscount == 0) {
@@ -113,7 +121,8 @@ class BookYourShow {
      * @param      date       The date
      * @param      pnumber    The pnumber
      */
-    public void printTicket(final String moviename, final String date, final String pnumber) {
+    public void printTicket(final String moviename, 
+        final String date, final String pnumber) {
         Show checkshow = getAShow(moviename, date);
         if (checkshow != null) {
             int flag = 0;
