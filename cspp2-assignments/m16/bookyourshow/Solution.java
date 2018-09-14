@@ -79,7 +79,6 @@ class BookYourShow {
             int flag = 0;
             for(int i=0;i<allpatronscount;i++){
                 if(allpatrons[i].pnumber.equals(pnumber)){
-                    System.out.println(pnumber + " " +moviename + " " + date);
                     break;
                 }
             }
@@ -87,7 +86,7 @@ class BookYourShow {
                 System.out.println(pnumber + " " +moviename + " " + date);
             }else {
                 System.out.println("Invalid");
-            }
+            } 
         }
 
     }
