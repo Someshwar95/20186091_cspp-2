@@ -5,9 +5,9 @@ import java.util.Arrays;
  * Class for solution.
  */
 class Show {
-    String moviename;
-    String date;
-    String[] seats;
+    public String moviename;
+    public String date;
+    public String[] seats;
     public Show(String moviename, String dateandtime, String[] seats) {
         moviename = moviename;
         date = dateandtime;
@@ -15,8 +15,8 @@ class Show {
     }
 }
 class Patron {
-    String name;
-    String pnumber;
+    public String name;
+    public String pnumber;
     public Patron(String name, String pnumber) {
         name = name;
         pnumber = pnumber;
@@ -38,8 +38,7 @@ class BookYourShow {
         allshows[allshowscount++] = show;
 
     }
-    public void bookAShow(String moviename, String date, 
-        Patron pa, String[] seats) {
+    public void bookAShow(String moviename, String date, Patron pa, String[] seats) {
         Show checkshow = getAShow(moviename,date);
         if(allshowscount == 0){
             System.out.println("No show");
@@ -60,7 +59,7 @@ class BookYourShow {
                     allshows[p] = checkshow;
                 }
             }
-            if(flag==1) {
+            if(flag == 1) {
                 allpatrons[allpatronscount++]=pa;
             }
         } else {
