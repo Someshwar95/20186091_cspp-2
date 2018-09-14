@@ -44,19 +44,19 @@ class BookYourShow {
     /**.
      * { var_description }
      */
-    public Show[] allshows;
+    private Show[] allshows;
     /**.
      * { var_description }
      */
-    public int allshowscount;
+    private int allshowscount;
     /**.
      * { var_description }
      */
-    public Patron[] allpatrons;
+    private Patron[] allpatrons;
     /**.
      * { var_description }
      */
-    public int allpatronscount;
+    private int allpatronscount;
     /**.
      * Constructs the object.
      */
