@@ -250,8 +250,12 @@ public final class Solution {
     public static void startQuiz(final Scanner scan,
         final Quiz quiz, final int q) {
     	Scanner sc = new Scanner(System.in);
-    	String questiontext = sc.nextLine();
-    	System.out.println("question text" + questiontext);
+    	String sca = sc.nextLine();
+    	System.out.println("question text 1"+sca);
+    	String qui = sc.nextLine();
+    	System.out.println("question text 2"+qui);
+    	String qi = sc.nextLine();
+    	System.out.println("question text 3"+qi);
         // write your code here to display the quiz questions on the console.
         // read the user responses from the console using scanner object.
         // store the user respone in the question object
