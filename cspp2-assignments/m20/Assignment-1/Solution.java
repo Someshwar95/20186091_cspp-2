@@ -236,8 +236,8 @@ public final class Solution {
         final Quiz quiz, final int q) {
     	for (int i=0;i<q;i++) {
 
-    		Scanner sc = new Scanner(System.in);
-    		String input = sc.nextLine();
+    		Scanner s = new Scanner(System.in);
+    		String input = s.nextLine();
     		String[] token = input.split(":");
     		String[] choiceArray = token[1].split(",");
     		Question quesObj = new Question(token[0],choiceArray,Integer.parseInt(token[2]),Integer.parseInt(token[3]),Integer.parseInt(token[4]));
