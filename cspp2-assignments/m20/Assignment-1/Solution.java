@@ -242,9 +242,9 @@ public final class Solution {
     		String[] choiceArray = token[1].split(",");
     		Question quesObj = new Question(token[0],choiceArray,Integer.parseInt(token[2]),Integer.parseInt(token[3]),Integer.parseInt(token[4]));
     		quiz.addQuestion(quesObj);
+    		System.out.println("4 are added to the quiz");
     	}
 
-    	System.out.println("4 are added to the quiz");
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
