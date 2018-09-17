@@ -234,6 +234,10 @@ public final class Solution {
      */
     public static void loadQuestions(final Scanner scan,
         final Quiz quiz, final int q) {
+    	Scanner sc = new Scanner(System.in);
+    	String input = sc.nextLine();
+    	String[] token = input.split(":");
+    	String[] choiceArray = token[1].split(",");
     	System.out.println("4 are added to the quiz");
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
@@ -248,9 +252,6 @@ public final class Solution {
      */
     public static void startQuiz(final Scanner scan,
         final Quiz quiz, final int q) {
-    	Scanner sc = new Scanner(System.in);
-    	String sca = sc.next();
-    	int qi = scan.nextInt();
         // write your code here to display the quiz questions on the console.
         // read the user responses from the console using scanner object.
         // store the user respone in the question object
