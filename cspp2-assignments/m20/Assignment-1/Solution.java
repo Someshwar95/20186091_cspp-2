@@ -235,7 +235,6 @@ public final class Solution {
     public static void loadQuestions(final Scanner scan,
         final Quiz quiz, final int q) {
     	System.out.println("4 are added to the quiz");
-    	Scanner sc = new Scanner(System.in);
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
