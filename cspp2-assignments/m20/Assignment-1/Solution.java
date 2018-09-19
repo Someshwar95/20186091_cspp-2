@@ -47,7 +47,7 @@ class Question {
         final int correctAnswer1, final int maxMarks1, final int penalty1) {
         this.questiontext = question1;
         this.choices = choices1;
-        this.correctAnswer =correctAnswer1;
+        this.correctAnswer = correctAnswer1;
         this.maxMarks = maxMarks1;
         this.penalty = penalty1;
         this.response = "";
@@ -220,6 +220,10 @@ public final class Solution {
      /**
      * Constructs the object.
      */
+    /**.
+     * { var_description }
+     */
+    private static final int THREE = 3;
     private Solution() {
         // leave this blank
     }
