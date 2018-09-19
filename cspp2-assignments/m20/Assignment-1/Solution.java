@@ -329,7 +329,7 @@ public final class Solution {
             quiz.addQuestion(new Question(tokens[0], tokens[1].split(
                 ","), Integer.parseInt(tokens[2]), Integer.parseInt(
                 tokens[THREE]), Integer.parseInt(tokens[FOUR])));
-            
+
         }
         System.out.println(q + " are added to the quiz");
 
