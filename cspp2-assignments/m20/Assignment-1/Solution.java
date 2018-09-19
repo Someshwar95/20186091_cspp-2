@@ -232,6 +232,9 @@ public final class Solution {
      * { var_description }
      */
     private static final int THREE = 3;
+    /**.
+     * Constructs the object.
+     */
     private Solution() {
         // leave this blank
     }
@@ -361,3 +364,6 @@ public final class Solution {
         System.out.println(quiz.showReport());
     }
 }
+
+
+
