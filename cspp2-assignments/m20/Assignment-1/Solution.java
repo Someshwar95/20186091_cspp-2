@@ -286,14 +286,15 @@ public final class Solution {
                 break;
             }
         }
-    }
+    }     
     /**
      * Loads questions.
      *
      * @param      scan       The scan
      * @param      quiz       The quiz
-     * @param      q          The question count
+     * @param      q          The quarter
      *
+     * @throws     Exception  { exception_description }
      */
     public static void loadQuestions(final Scanner scan,
         final Quiz quiz, final int q) throws Exception {
