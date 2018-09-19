@@ -223,6 +223,10 @@ public final class Solution {
     /**.
      * { var_description }
      */
+    private static final int FIVE = 5;
+    /**.
+     * { var_description }
+     */
     private static final int FOUR = 4;
     /**.
      * { var_description }
@@ -299,7 +303,7 @@ public final class Solution {
                 if (token.equals("")) {
                     throw new Exception("Error! Malformed question");
                 }
-            if (tokens.length < 5) {
+            if (tokens.length < FIVE) {
                 throw new Exception("Error! Malformed question");
             }
             if (tokens[1].split(",").length < 2) {
