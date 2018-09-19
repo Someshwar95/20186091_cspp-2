@@ -300,12 +300,13 @@ public final class Solution {
         if (q == 0) {
             throw new Exception("Quiz does not have questions");
         }
-    	for (int  i = 0; i < q; i++) {
+    	for (int i = 0; i < q; i++) {
             String[] tokens = scan.nextLine().split(":");
-            for (String token : tokens)
+            for (String token : tokens) {
                 if (token.equals("")) {
                     throw new Exception("Error! Malformed question");
                 }
+            }
             if (tokens.length < FIVE) {
                 throw new Exception("Error! Malformed question");
             }
@@ -328,7 +329,7 @@ public final class Solution {
             quiz.addQuestion(new Question(tokens[0], tokens[1].split(
                 ","), Integer.parseInt(tokens[2]), Integer.parseInt(
                 tokens[THREE]), Integer.parseInt(tokens[FOUR])));
-            // System.out.println(i);
+            
         }
         System.out.println(q + " are added to the quiz");
 
