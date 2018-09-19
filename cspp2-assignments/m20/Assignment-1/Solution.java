@@ -178,6 +178,11 @@ class Quiz {
         return questions[index];
     }
 
+    /**.
+     * Gets the questions.
+     *
+     * @return     The questions.
+     */
     public Question[] getQuestions() {
         return Arrays.copyOf(questions, size);
     }
@@ -290,7 +295,7 @@ public final class Solution {
                 throw new Exception("Error! Malformed question");
             }
             if (tokens[1].split(",").length < 2) {
-                throw new Exception(tokens[0] 
+                throw new Exception(tokens[0]
                     + " does not have enough answer choices");
             }
             if (Integer.parseInt(tokens[2]) > tokens[1].split(",").length) {
