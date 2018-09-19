@@ -300,7 +300,7 @@ public final class Solution {
         if (q == 0) {
             throw new Exception("Quiz does not have questions");
         }
-    	for (int i = 0; i < q; i++) {
+        for (int i = 0; i < q; i++) {
             String[] tokens = scan.nextLine().split(":");
             for (String token : tokens) {
                 if (token.equals("")) {
