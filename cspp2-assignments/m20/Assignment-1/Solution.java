@@ -308,7 +308,7 @@ public final class Solution {
                      + "out of range for question text"
                     + (i + 1));
             }
-            if (Integer.parseInt(tokens[3]) < 0) {
+            if (Integer.parseInt(tokens[THREE]) < 0) {
                 throw new Exception("Invalid max marks for " + tokens[0]);
             }
             if (Integer.parseInt(tokens[4]) > 0) {
