@@ -223,6 +223,10 @@ public final class Solution {
     /**.
      * { var_description }
      */
+    private static final int FOUR = 4;
+    /**.
+     * { var_description }
+     */
     private static final int THREE = 3;
     private Solution() {
         // leave this blank
@@ -311,12 +315,12 @@ public final class Solution {
             if (Integer.parseInt(tokens[THREE]) < 0) {
                 throw new Exception("Invalid max marks for " + tokens[0]);
             }
-            if (Integer.parseInt(tokens[4]) > 0) {
+            if (Integer.parseInt(tokens[FOUR]) > 0) {
                 throw new Exception("Invalid penalty for " + tokens[0]);
             }
             quiz.addQuestion(new Question(tokens[0], tokens[1].split(
                 ","), Integer.parseInt(tokens[2]), Integer.parseInt(
-                tokens[THREE]), Integer.parseInt(tokens[4])));
+                tokens[THREE]), Integer.parseInt(tokens[FOUR])));
             // System.out.println(i);
         }
         System.out.println(q + " are added to the quiz");
